@@ -11,6 +11,11 @@
     <div class="container">
         <h2>Currency Converter</h2>
 
+        <!-- Dark mode toggle button -->
+        <button onclick="toggleDarkMode()" id="dark-mode-toggle">
+            <i class="fas fa-adjust"></i> Toggle Dark Mode
+        </button>
+
         <form>
             <div class="amount">
                 <p>Enter Amount</p>
@@ -45,5 +50,14 @@
 
     <script src="codes.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        // JavaScript function to toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+    
 </body>
 </html>

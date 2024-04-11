@@ -7,12 +7,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EBD4CB;
+    background-color: #EEEEEE;
     min-height: 100vh;
 }
 
 .container {
-    background-color: #DA9F93;
+    background-color: #76ABAE;
     padding: 2rem;
     border-radius: 1rem;
     border: none;
@@ -74,17 +74,61 @@ form input {
 
 form button {
   height: 3rem;
-  background-color: #B6465F;
-  color: #fff;
+  background-color: whitesmoke;
+  color: black;
   font-size: 1.15rem;
+  font-weight: 200;
   cursor: pointer;
   margin-top: 3rem;
 }
 
 .msg {
-  margin: 2rem 0 2rem 0;
+  margin: 4rem 0 0 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+
+.dark-mode {
+  background-color: darkgrey;
+  color: #fff;
+}
+
+.dark-mode .container {
+  background-color: #444;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode button {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-mode input[type="text"],
+.dark-mode select {
+  background-color: #666;
+  color: #fff;
+}
+
+/* Dark mode toggle button styles */
+#dark-mode-toggle {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+#dark-mode-toggle:hover {
   font-weight: bold;
 }
+
+
+
 
 @media screen and (max-width: 440px) {
   .container {
